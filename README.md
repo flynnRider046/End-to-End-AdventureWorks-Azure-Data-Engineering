@@ -1,7 +1,7 @@
 # AdventureWorks-Azure-Data-Engineering
-This project performs 
 
 ## Introduction
+This project performs the Data Engineering implementation for the AdventureWorks data using Microsoft Azure services. This project helps to understand the data ingestion from github, storing the data, transforming, performing analysis and visualization of the AdventureWorks data.
 
 ## Project Overview
 
