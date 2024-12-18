@@ -27,6 +27,18 @@ The data flows through the following steps:
 * Power BI
 
 ## Data Source
+The project data is used from AdventureWorks data stored in Github.
+The datasets involves multiple files with information about
+* Calendar
+* Customers
+* Product Categories
+* Product Subcategories
+* Products
+* Returns
+* Sales 2015
+* Sales 2016
+* Sales 2017
+* Territories
 
 ## Data Ingestion
 
