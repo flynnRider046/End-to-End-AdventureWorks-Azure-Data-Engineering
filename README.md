@@ -28,11 +28,11 @@ The data flows through the following steps:
 
 ## Data Source
 
-[Dataset](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/tree/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Data)
 
 
 The project data is used from AdventureWorks data stored in Github.
-The datasets involves multiple files with information about
+The [dataset](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/tree/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Data)
+ involves multiple files with information about
 * Calendar
 * Customers
 * Product Categories
@@ -74,7 +74,8 @@ The gold layer contains curated, fully processed adventure data that is ready fo
 This layered approach ensures data quality, scalability, and easier data management while enabling robust analytics using Azure services like Azure data Lake Storage, Azure Synapse Analytics, Azure Data Fctory and Azure Databricks.
 
 ## Data Transformation
-Azure Databricks is used to convert raw data in bronze container to a structured format. For this we have made sure a cluster for databricks is created for data efficiency. This databricks is connected to the data in the silver layer and is transformed for further analysis.
+Azure Databricks is used to convert raw data in bronze container to a structured format. For this we have made sure a cluster for databricks is created for data efficiency. This databricks is connected to the data in the silver layer and is transformed for further analysis. Please find the attached [ipynb](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/f807272465cbc7b0419b50797a6194344d6dedbd/aproject%20silver%20layer.ipynb) file which performs the transformation on the data present in silver layer.
+
 
 ## Insights and Analytics
 The final step here was integrating the data with Power BI tool to visualize and generate insights. Here are the reports to present actionable insights to stakeholders.
