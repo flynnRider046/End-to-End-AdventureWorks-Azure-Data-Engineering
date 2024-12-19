@@ -49,7 +49,7 @@ Resource Groups in Azure are logical containers used to manage and organize rela
 ![Resource Groups](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Resource%20Groups.png)
 
 ## Data Ingestion
-
+![Data Ingestion](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/8d25039d42ae8e607834211b99b994b4ae8576c3/Images/Data%20Factory.png)
 
 ## Storage Accounts
 ![StorageLake](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Storage%20DataLake.png)
