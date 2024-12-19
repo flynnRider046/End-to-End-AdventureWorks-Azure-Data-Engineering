@@ -27,6 +27,10 @@ The data flows through the following steps:
 * Power BI
 
 ## Data Source
+
+[Dataset](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/tree/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Data)
+
+
 The project data is used from AdventureWorks data stored in Github.
 The datasets involves multiple files with information about
 * Calendar
@@ -40,23 +44,32 @@ The datasets involves multiple files with information about
 * Sales 2017
 * Territories
 
+## Resource Groups
+Resource Groups in Azure are logical containers used to manage and organize related Azure resources. They support lifecycle management by enabling easy deletion of associated resources. Additionally, resource groups help track costs and usage across services. The first step here is to setup Resource groups. Following image shows the resource groups implementation
+![Resource Groups](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Resource%20Groups.png)
+
 ## Data Ingestion
+
 
 ## Storage Accounts
+![StorageLake](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Storage%20DataLake.png)
 
 ## Containers
-
-## Resource Groups
-
-## Data Ingestion
+![BronzeLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Bronze%20Layer.png)
+![SilverLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Silver%20Layer.png)
+![GoldLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Gold%20Layer.png)
 
 ## Insights and Analytics
+![Insights1](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI.png)
+![Insights2](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI%202.png)
 
 ## Summary of Insights
 
 ## Contributors
+<strong>Rohith Damgeti</strong>
 
 ## Credits
+<strong>Ansh Lamba</strong>
 
 ## References
 [https://www.youtube.com/watch?v=0GTZ-12hYtU&t=915s]
