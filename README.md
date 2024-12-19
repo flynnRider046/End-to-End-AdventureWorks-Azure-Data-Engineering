@@ -55,10 +55,7 @@ We have used Azure Data Factory for data orchestration and automation. Data Fact
 ![Data Ingestion](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/8d25039d42ae8e607834211b99b994b4ae8576c3/Images/Data%20Factory.png)
 
 ## Storage Accounts
-![StorageLake](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Storage%20DataLake.png)
-
-## Containers
-In Azure Data Engineering, the Bronze, Silveer and Gold layers represent a data architecture pattern used in Data Lakes and Lakehouses for organiing and processing data. 
+We have used Azure Data Lake Gen2 for storing the raw data. In Azure Data Engineering, the Bronze, Silver and Gold layers represent a data architecture pattern used in Data Lakes and Lakehouses for organiing and processing data. 
 The Bronze layer is the raw data storage layer where data from various sources is ingested in its original format regardless of structure. The data is immutable and is used for data reprocessing.
 
 ![BronzeLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Bronze%20Layer.png)
@@ -74,15 +71,18 @@ The gold layer contains curated, fully processed adventure data that is ready fo
 This layered approach ensures data quality, scalability, and easier data management while enabling robust analytics using Azure services like Azure data Lake Storage, Azure Synapse Analytics, Azure Data Fctory and Azure Databricks.
 
 ## Data Transformation
-Azure Databricks is used to convert raw data in bronze container to a structured format. For this we have made sure a cluster for databricks is created for data efficiency. This databricks is connected to the data in the silver layer and is transformed for further analysis. Please find the attached [ipynb](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/f807272465cbc7b0419b50797a6194344d6dedbd/aproject%20silver%20layer.ipynb) file which performs the transformation on the data present in silver layer.
+Azure Databricks is used to convert raw data in bronze container to a structured format. For this we have made sure a cluster for databricks is created for data efficiency. This databricks is connected to the data in the silver layer and is transformed for further analysis. Please find the attached [ipynb](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/f807272465cbc7b0419b50797a6194344d6dedbd/aproject%20silver%20layer.ipynb) file which performs the transformation on the data present in silver layer. The transformations include performing normalization of data formats for consistency, concatenating data to make it more usable for analysis.
 
 
 ## Insights and Analytics
-The final step here was integrating the data with Power BI tool to visualize and generate insights. Here are the reports to present actionable insights to stakeholders.
+The final step here was integrating the data with Power BI tool to visualize and generate insights. Here are the reports to present actionable insights to stakeholders. Below graph shows shows number of orders on different order dates.
 ![Insights1](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI.png)
-![Insights2](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI%202.png)
 
-## Summary of Insights
+## Summary of Project
+The project involved building a scalable data pipeline for processing and analyzing large datasets using Azure based tools. Azure Data Factory orchestrated data ingestion into Azure Data Lake Storage for centralized storage. Data transformation was performed using Azure Databricks, implementing ETL processes to clean, aggregate, and enrich data. Processed data was loaded into Azure Synapse Analytics for analytical querying and reporting. Power BI dashboards provided real-time business insights.
+
+Key aspects included optimizing data pipeline performance, ensuring data quality through validation checks, and implementing robust security measures. The solution supported data-driven decision-making by delivering accurate, timely, and actionable insights.
+
 
 ## Contributors
 <strong>Rohith Damgeti</strong>
