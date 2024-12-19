@@ -45,21 +45,39 @@ The datasets involves multiple files with information about
 * Territories
 
 ## Resource Groups
-Resource Groups in Azure are logical containers used to manage and organize related Azure resources. They support lifecycle management by enabling easy deletion of associated resources. Additionally, resource groups help track costs and usage across services. The first step here is to setup Resource groups. Following image shows the resource groups implementation
+Resource Groups in Azure are logical containers used to manage and organize project related Azure resources. They support lifecycle management by enabling easy deletion of associated resources. Additionally, resource groups help track costs and usage across services. The first step here is to setup Resource groups. Following image shows the resource groups implementation
+
 ![Resource Groups](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Resource%20Groups.png)
 
 ## Data Ingestion
+We have used Azure Data Factory for data orchestration and automation. Data Factory oulls the data from GitHub using an HTTP connector and stores it in the bronze container in Azure Storage. Parameters are added to the pipeline for adaptability to changes in the data source.
+
 ![Data Ingestion](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/8d25039d42ae8e607834211b99b994b4ae8576c3/Images/Data%20Factory.png)
 
 ## Storage Accounts
 ![StorageLake](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Azure%20Storage%20DataLake.png)
 
 ## Containers
+In Azure Data Engineering, the Bronze, Silveer and Gold layers represent a data architecture pattern used in Data Lakes and Lakehouses for organiing and processing data. 
+The Bronze layer is the raw data storage layer where data from various sources is ingested in its original format regardless of structure. The data is immutable and is used for data reprocessing.
+
 ![BronzeLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Bronze%20Layer.png)
+
+The Silver layer contains cleaned and transformed data from the Bronze layer, the data transformation is performed through Azure Databricks where the process like data standardization and basic transformations takes place making it suitable for intermediate analytics and operational reporting.
+
 ![SilverLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Silver%20Layer.png)
+
+The gold layer contains curated, fully processed adventure data that is ready for advanced analytics. The data in this layer is aggregated, summarized, and enriched to support decision-making processes.
+
 ![GoldLayer](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Gold%20Layer.png)
 
+This layered approach ensures data quality, scalability, and easier data management while enabling robust analytics using Azure services like Azure data Lake Storage, Azure Synapse Analytics, Azure Data Fctory and Azure Databricks.
+
+## Data Transformation
+Azure Databricks is used to convert raw data in bronze container to a structured format. For this we have made sure a cluster for databricks is created for data efficiency. This databricks is connected to the data in the silver layer and is transformed for further analysis.
+
 ## Insights and Analytics
+The final step here was integrating the data with Power BI tool to visualize and generate insights. Here are the reports to present actionable insights to stakeholders.
 ![Insights1](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI.png)
 ![Insights2](https://github.com/flynnRider046/End-to-End-AdventureWorks-Azure-Data-Engineering/blob/a058bc413e0cc9602f10a1a479cfa64a83bb9e2d/Images/Power%20BI%202.png)
 
